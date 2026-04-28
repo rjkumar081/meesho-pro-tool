@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<h3>Meesho Tool</h3>
+<div class="app">
 
-<select id="profileList"></select>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>meesho</h2>
+    <button class="active">Profiles</button>
+    <button>Defaults</button>
+    <button>Auto Capture</button>
+    <button>Bulk Listing</button>
+  </div>
 
-<input id="title" placeholder="Title">
-<input id="price" placeholder="Price">
-<input id="category" placeholder="Category">
+  <!-- Main -->
+  <div class="main">
 
-<input type="file" id="excelUpload">
+    <div class="header">
+      <h1>MEESHO <span>AUTOFILL</span></h1>
+      <button id="autofillBtn">⚡ Autofill</button>
+    </div>
 
-<button id="saveProfile">Save</button>
-<button id="loadProfile">Load</button>
-<button id="autofill">Autofill</button>
-<button id="bulk">Bulk</button>
+    <div class="card">
+      <h3>Profiles</h3>
+
+      <select id="profileList"></select>
+      <button id="addProfile">＋</button>
+
+      <div class="actions">
+        <button id="rename">Rename</button>
+        <button id="delete">Delete</button>
+      </div>
+
+      <div class="capture">
+        <button id="detect">📸 Capture Fields</button>
+        <button id="auto">⚡ Auto Capture</button>
+      </div>
+
+      <div class="status" id="statusBox">
+        Ready to Autofill
+      </div>
+
+      <button id="stop" class="danger">STOP AUTOFILL</button>
+
+    </div>
+
+  </div>
+
+</div>
 
 <script src="popup.js"></script>
-<script src="excel.js"></script>
-
 </body>
 </html>
