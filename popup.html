@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,6 +11,7 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <h2>meesho</h2>
+
     <button class="active">Profiles</button>
     <button>Defaults</button>
     <button>Auto Capture</button>
@@ -21,24 +23,21 @@
 
     <div class="header">
       <h1>MEESHO <span>AUTOFILL</span></h1>
-      <button id="autofillBtn">⚡ Autofill</button>
+      <button id="autofillBtn">Autofill</button>
     </div>
 
     <div class="card">
       <h3>Profiles</h3>
 
       <select id="profileList"></select>
-      <button id="addProfile">＋</button>
 
-      <div class="actions">
+      <div class="row">
         <button id="rename">Rename</button>
         <button id="delete">Delete</button>
       </div>
 
-      <div class="capture">
-        <button id="detect">📸 Capture Fields</button>
-        <button id="auto">⚡ Auto Capture</button>
-      </div>
+      <button id="detect">Capture Fields</button>
+      <button id="auto">Auto Capture</button>
 
       <div class="status" id="statusBox">
         Ready to Autofill
