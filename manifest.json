@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Meesho Pro Autofill Tool",
+  "version": "2.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://supplier.meesho.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://supplier.meesho.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
